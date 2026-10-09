@@ -1,50 +1,125 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: #e0f2fe;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #0f172a;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #475569;
+        }
+
+        button {
+            background: #0284c7;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .about {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .card {
+            background: white;
+            max-width: 300px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 18px;
+        }
+    </style>
 </head>
 
-<body style="background-image: url(bg.jpeg);">
-  <h1 style="color: #fdfeff; text-align: center",><u>About CSE Department</u></h1>
-<img src="tanvir.jpg" alt="Tanvir"
-style="
-display: block;
-margin: auto;
-width: 200px;
-border: 4px solid white;
-border-radius: 25px;
-box-shadow: 0 0 15px rgba(180, 206, 32, 0.8);
-">
-<!-- Google Font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body>
 
-<p style="
-  color: white;
-  line-height: 1.9;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.3px;
-">
-  <span style="color: #00e5ff; font-weight: 700;">
-    Computer Science and Engineering (CSE)
-  </span>
-  is one of the most important and rapidly growing fields of technology and innovation.
-  It combines computer science, programming, mathematics, and engineering to create modern
-  solutions for real-world problems. CSE plays a major role in shaping the future of technology
-  and has become an essential part of our everyday lives.
-  <br><br
-  It focuses on
-  <span style="color: #ffd700; font-weight: 500;">
-    programming, software development, computer systems,
-    databases, networking, and information technology.
-  </span>
-  CSE students learn different programming languages and develop logical thinking,
-  problem-solving, and analytical skills. They also learn how to design, develop, test,
-  and maintain software applications and technology-based systems.
+    <header>
+        <h2>MyWebsite</h2>
 
-</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>I am learning web development and building amazing things.</p>
+        <button onclick="alert('Welcome to my website!')">
+            Explore More
+        </button>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student passionate about technology.</p>
+
+        <div class="card">
+            <h3>My Skills</h3>
+            <p>HTML | CSS | Flutter</p>
+            <p>Learning something new every day.</p>
+        </div>
+    </section>
+
+    <section class="about" id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: example@gmail.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MyWebsite | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
